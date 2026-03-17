@@ -56,7 +56,7 @@ export class CheckListSubgrid implements ComponentFramework.StandardControl<IInp
 			name: records[id].getValue("name").toString(),
 			alternateText: records[id].getValue("alternateText") == null ? " " : records[id].getValue("alternateText").toString(),
 			id: id,
-			description: records[id].getValue("description") == null ? "No Description" : records[id].getValue("description").toString(),
+			description: records[id].getValue("ac_fournisseur") == null ? "No Description" : records[id].getValue("ac_fournisseur").toString(),
 			twoOptions: <boolean>records[id].getValue("booleanAttribute"),
 		})
 		);
